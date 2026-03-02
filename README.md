@@ -1,44 +1,53 @@
 # 🌀 Lucera : La Passerelle d'Intelligence Énergétique
 
-> **Permettre l'innovation en IA au Québec malgré les limites du réseau électrique.**
+> **Réconcilier l'explosion de l'IA avec la résilience du réseau électrique québécois.**
 
 ---
 
 ## 💡 Le Concept : L'Étiquette Nutritionnelle de l'IA
-Tout comme nous vérifions l'impact de ce que nous consommons physiquement, **Lucera** génère une étiquette nutritionnelle en temps réel pour chaque charge de calcul IA :
+Lucera transforme la consommation invisible des centres de données en données actionnables et vulgarisées. Pour chaque charge de calcul, nous générons une étiquette dynamique :
 
-* **⚡ Calories Énergétiques :** Watts consommés par inférence.
-* **🌍 Gras Carbonés :** Intensité carbone du réseau à l'instant T.
-* **🍎 Vitamines Sociétales :** Quantité de chaleur fatale récupérée pour la communauté.
-
-
+* **⚡ Calories Énergétiques :** Consommation réelle en Watts par inférence ou entraînement.
+* **🌍 Gras Carbonés :** Empreinte CO2 basée sur l'intensité du réseau en temps réel.
+* **🍎 Vitamines Sociétales :** Quantité de chaleur fatale récupérée pour chauffer des serres ou infrastructures municipales.
 
 ---
 
-## 🚩 Le Problème : L'Impasse Énergétique du Québec
-Actuellement, Hydro-Québec doit refuser des projets innovants par manque de ressources et de flexibilité sur le réseau. Sans une gestion dynamique, le développement technologique du Québec stagne. 
+## 🚩 L'Urgence : Pourquoi Lucera ?
+Le Québec a atteint la limite de sa capacité énergétique disponible, forçant Hydro-Québec à refuser des projets d'innovation majeurs. 
 
-**Lucera répond à l'urgence de la Loi 69** en offrant aux centres de données la "preuve de flexibilité" nécessaire pour obtenir leurs permis de connexion.
+**Lucera s'inscrit directement dans la mission de la Loi 69 (2025)** :
+* **Conformité & Flexibilité :** Offre aux centres de données la "preuve de flexibilité" et la capacité d'effacement automatique requises pour obtenir des permis de connexion.
+* **Gouvernance Responsable :** Permet de protéger les tarifs résidentiels en déplaçant les charges lourdes d'IA hors des périodes de pointe.
+* **Accélération Technologique :** Débloque les projets innovants en garantissant qu'ils ne déstabiliseront pas le réseau provincial.
 
 ---
 
 ## 🛠️ Architecture Technique (SaaS Middleware)
-Lucera agit comme un **disjoncteur logiciel intelligent** (Active Orchestration).
+Lucera agit comme un disjoncteur logiciel intelligent (Active Orchestration) situé au niveau de la couche applicative.
 
-* **Noyau Temps Réel :** Architecture *Observer-Pattern* développée en **Java 21** pour une réactivité critique.
-* **Délestage Algorithmique (Throttling) :** Capacité de réduire la consommation des serveurs de **≥ 10%** en moins de 500ms lors des pointes de demande.
-* **Dashboard SvelteKit :** Visualisation haute performance des métriques d'économie énergétique et de redistribution de chaleur.
-
-
+* **Noyau Temps Réel (Java 21) :** Architecture *Observer-Pattern* pour ingérer les métriques de stress (Tarif L) avec une latence **< 500ms**.
+* **Délestage Algorithmique (Throttling) :** Capacité de réduire la charge des threads GPU/CPU de **≥ 10%** sans corruption de données.
+* **Dashboard SvelteKit :** Interface haute performance pour le monitoring ESG et la gestion de la redistribution thermique.
 
 ---
 
 ## 🎯 Objectifs Ose Entreprendre (11 Mars 2026)
-* **Démontrer la viabilité B2B :** Passer d'une simulation à un outil d'infrastructure indispensable pour les opérateurs de centres de données.
-* **Impact Social :** Transformer le gaspillage thermique en énergie communautaire (ex: chauffer des serres ou des piscines).
-* **Souveraineté :** Assurer que le Québec reste un leader de l'IA tout en protégeant les tarifs d'électricité des citoyens.
+* **Validation B2B :** Transformer une recherche académique en un outil d'infrastructure indispensable pour les opérateurs.
+* **Économie Circulaire :** Valoriser la chaleur résiduelle (waste heat) pour créer une valeur estimée à **65 000 $/an par MW**.
+* **Souveraineté :** Assurer que le Québec reste un leader de l'IA tout en étant un modèle mondial de durabilité énergétique.
 
 ---
+
+## 📂 Structure du Projet
+* `/backend-java` : Middleware, gestion de la concurrence & Observer Pattern.
+* `/frontend-svelte` : Interface de l'étiquette nutritionnelle & Dashboard.
+* `/docs` : Analyse d'impact Loi 69 & Business Plan Ose Entreprendre.
+
+---
+
+## 👩‍💻 À propos de la Fondatrice
+**Myriam Leblanc** – Finissante en informatique à l'Université Bishop's. Athlète d'endurance (Ironman 2026) passionnée par l'intersection entre le code robuste et l'impact humain. Mon objectif est de bâtir des ponts technologiques qui respectent nos limites planétaires.
 
 ## 📂 Structure du Projet
 * `/backend-java` : Logique de délestage et gestion de la concurrence.
