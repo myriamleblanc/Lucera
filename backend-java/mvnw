@@ -1,0 +1,48 @@
+#!/bin/sh
+# ----------------------------------------------------------------------------
+# Maven Wrapper startup script
+# Simplified version: downloads maven-wrapper.jar on first run if necessary.
+# ----------------------------------------------------------------------------
+
+set -e
+
+BASEDIR=$(cd "$(dirname "$0")"; pwd)
+WRAPPER_JAR="$BASEDIR/.mvn/wrapper/maven-wrapper.jar"
+WRAPPER_MAIN=org.apache.maven.wrapper.MavenWrapperMain
+
+# Download the Maven Wrapper JAR if it does not exist yet
+if [ ! -f "$WRAPPER_JAR" ]; then
+  echo "Downloading Maven Wrapper (maven-wrapper.jar)..." >&2
+  mkdir -p "$BASEDIR/.mvn/wrapper"
+  WRAPPER_URL="https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.2.0/maven-wrapper-3.2.0.jar"
+
+  if command -v curl >/dev/null 2>&1; then
+    curl -fsSL -o "$WRAPPER_JAR" "$WRAPPER_URL"
+  elif command -v wget >/dev/null 2>&1; then
+    wget -q -O "$WRAPPER_JAR" "$WRAPPER_URL"
+  else
+    echo "ERROR: curl or wget is required to download maven-wrapper.jar" >&2
+    exit 1
+  fi
+fi
+
+# Select Java executable
+JAVA_EXE="java"
+if [ -n "$JAVA_HOME" ]; then
+  if [ -x "$JAVA_HOME/bin/java" ]; then
+    JAVA_EXE="$JAVA_HOME/bin/java"
+  fi
+fi
+
+if ! command -v "$JAVA_EXE" >/dev/null 2>&1; then
+  echo "ERROR: Java executable not found. Please install Java 21 and/or set JAVA_HOME." >&2
+  exit 1
+fi
+
+export MAVEN_PROJECTBASEDIR="${MAVEN_PROJECTBASEDIR:-$BASEDIR}"
+
+exec "$JAVA_EXE" \
+  -Dmaven.multiModuleProjectDirectory="$MAVEN_PROJECTBASEDIR" \
+  -cp "$WRAPPER_JAR" \
+  "$WRAPPER_MAIN" "$@"
+

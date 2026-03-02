@@ -1,0 +1,10 @@
+com/lucera/backend/web/dto/NutritionLabelDto.class
+com/lucera/backend/web/dto/StatusResponseDto.class
+com/lucera/backend/LuceraBackendApplication.class
+com/lucera/backend/observer/StressObserver.class
+com/lucera/backend/service/StressSimulator.class
+com/lucera/backend/domain/StressSignal.class
+com/lucera/backend/web/StatusController.class
+com/lucera/backend/config/StressConfiguration.class
+com/lucera/backend/domain/GridObserver.class
+com/lucera/backend/service/ThrottlingService.class

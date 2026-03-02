@@ -1,0 +1,10 @@
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/LuceraBackendApplication.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/config/StressConfiguration.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/domain/GridObserver.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/domain/StressSignal.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/observer/StressObserver.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/service/StressSimulator.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/service/ThrottlingService.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/web/StatusController.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/web/dto/NutritionLabelDto.java
+/Users/myriam/Lucera_Final/backend-java/src/main/java/com/lucera/backend/web/dto/StatusResponseDto.java

@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  tomcat:
+    threads:
+      max: 50
+    accept-count: 100
+
+spring:
+  application:
+    name: lucera-backend
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info"
+
